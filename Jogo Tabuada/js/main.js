@@ -1,12 +1,12 @@
-var n1,n2,resultado;
-var nivel=10;
+let n1,n2,resultado;
+let nivel=10;
 
 function sorteando(){
 	n1=Math.floor(Math.random() * nivel); 
 	n2=Math.floor(Math.random() * nivel); 
 	resultado=n1*n2;
 	//imprimindo na tela os numeros sorteados
-	var texto= "<p>"+n1+" * "+n2+"= </p>";
+	let texto= "<p>"+n1+" * "+n2+"= </p>";
 	$("#sort").html(texto);
 	$("#sort").addClass("tamfonte");
 }
@@ -15,7 +15,7 @@ function sorteando(){
 $("#conferir").click(function(){
 
 
-	var resp=$("#resposta").val();
+	let resp=$("#resposta").val();
 
 	if(resp==resultado)
 		alert("Resposta Correta");
